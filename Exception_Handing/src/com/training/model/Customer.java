@@ -7,12 +7,12 @@ public class Customer {
 	private String email;
 	public Customer() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 	
 
 	
-	public Customer(int customerId, String customerName, int phoneNumber, String email) throws InvalidEmailException{
+	public Customer(int customerId, String customerName, int phoneNumber, String email){
 		super();
 		if(email.contains("@")|| email.contains(".com")||email.contains(".org")|| email.contains(".in")) {
 			this.email=email;
